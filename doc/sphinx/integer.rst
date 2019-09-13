@@ -152,8 +152,25 @@ Assignment
 Conversion
 ~~~~~~~~~~
 
-.. doxygengroup:: integer_conversion
-   :content-only:
+.. cpp:function:: template <CppInteroperable T, std::size_t SSize> inline bool mppp::get(T &rop, const mppp::integer<SSize> &n)
+   
+   Generic conversion function for :cpp:class:`~mppp::integer` integer.
+
+   This function will convert the input :cpp:class:`~mppp::integer` ``n`` to a
+   :cpp:concept:`~mppp::CppInteroperable` type, storing the result of the conversion into ``rop``.
+   If the conversion is successful, the function
+   will return ``true``, otherwise the function will return ``false``. If the conversion fails, ``rop`` will
+   not be altered.
+   
+   :param rop: the variable which will store the result of the conversion.
+   :param n:   the input :cpp:class:`~mppp::integer` integer.
+   
+   :return: ``true`` if the conversion succeeded, ``false`` otherwise. The conversion can fail only if ``rop`` is
+     a C++ integral which cannot represent the value of ``n``.
+
+
+
+
 
 .. _integer_arithmetic:
 
