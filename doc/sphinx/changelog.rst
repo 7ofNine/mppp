@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.17 (unreleased)
+0.17 (13-09-2019)
 -----------------
 
 New
@@ -11,9 +11,11 @@ New
   concepts proposal (`#196 <https://github.com/bluescarni/mppp/pull/196>`__,
   `#198 <https://github.com/bluescarni/mppp/pull/198>`__).
   Many thanks to `7ofNine <https://github.com/7ofNine>`__!
-- Expose the gamma functions from the MPFR API
+- Expose most of the missing special functions from the MPFR API
   for :cpp:class:`~mppp::real`
-  (`#190 <https://github.com/bluescarni/mppp/pull/190>`__).
+  (`#190 <https://github.com/bluescarni/mppp/pull/190>`__,
+  `#192 <https://github.com/bluescarni/mppp/pull/192>`__,
+  `#194 <https://github.com/bluescarni/mppp/pull/194>`__).
 
 Changes
 ~~~~~~~
